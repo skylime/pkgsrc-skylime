@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.36 2013/07/12 10:44:53 jperkin Exp $
+# $NetBSD: Makefile,v 1.37 2015/06/24 13:22:00 tm Exp $
 #
 
-DISTNAME=	w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-13.11-
-PKGNAME=	w0nko-13.11
+DISTNAME=	w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-14.10
+PKGNAME=	w0nko-14.10
 CATEGORIES=	chat
-MASTER_SITES=	-https://github.com/wiedi/w0nko/archive/u2.10.12.10+snircd(1.3.4a)+w0nko(13.11).zip
+MASTER_SITES=	-https://github.com/wiedi/w0nko/archive/u2.10.12.10+snircd-1.3.4a+w0nko-14.10.zip
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	sw@core.io
 HOMEPAGE=	https://github.com/wiedi/w0nko
 COMMENT=	Internet Relay Chat server customized for XChannel
+LICENSE=	gnu-gpl-v1
 
 CONFLICTS+=	ircd-hybrid-[0-9]* ircu*
 
@@ -48,7 +49,8 @@ PKG_SYSCONFDIR_PERMS=	${IRCD_USER} ${IRCD_GROUP} 0700
 
 RCD_SCRIPTS=		ircd
 
-FILES_SUBST+=		IRCD_USER=${IRCD_USER:Q}
+FILES_SUBST+=		IRCD_USER=${IRCD_USER:Q} \
+			IRCD_GROUP=${IRCD_GROUP:Q}
 MESSAGE_SUBST+=		IRCD_USER=${IRCD_USER}
 MESSAGE_SUBST+=		IRCD_GROUP=${IRCD_GROUP}
 
@@ -73,4 +75,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/readme.* ${DESTDIR}${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${DESTDIR}${DOCDIR}
 
+.include "../../devel/flex/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
