@@ -75,5 +75,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/readme.* ${DESTDIR}${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${DESTDIR}${DOCDIR}
 
+.include "../../security/openssl/buildlink3.mk"
 .include "../../devel/flex/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
