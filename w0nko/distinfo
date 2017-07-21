@@ -1,5 +1,6 @@
 $NetBSD: distinfo,v 1.13 2008/03/24 18:40:19 adrianp Exp $
 
-SHA1 (w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-14.10.zip) = 4d5756d014b646d5644769e3e7efcdc9460d750f
-RMD160 (w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-14.10.zip) = 9ca261ecb754623de190a6724dd08393e3a2477f
-Size (w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-14.10.zip) = 1710717 bytes
+SHA1 (w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-17.7.zip) = 6fa93432b65961b2d00deefe6ae52941381cef80
+RMD160 (w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-17.7.zip) = d29bf810f8ba6d8c008b289ce4c692af00aee360
+SHA512 (w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-17.7.zip) = cba375bef7e151060770b416277732f744629bc350dcad9b50c4f0877884d50b31f047054d9cfaafa9afea72e74d0333b1e4cd552c9a7473a0818b434e3e08f6
+Size (w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-17.7.zip) = 1710065 bytes

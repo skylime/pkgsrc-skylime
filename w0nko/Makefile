@@ -1,10 +1,10 @@
 # $NetBSD: Makefile,v 1.37 2015/06/24 13:22:00 tm Exp $
 #
 
-DISTNAME=	w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-14.10
-PKGNAME=	w0nko-14.10
+DISTNAME=	w0nko-u2.10.12.10-snircd-1.3.4a-w0nko-17.7
+PKGNAME=	w0nko-17.7
 CATEGORIES=	chat
-MASTER_SITES=	-https://github.com/wiedi/w0nko/archive/u2.10.12.10+snircd-1.3.4a+w0nko-14.10.zip
+MASTER_SITES=	-https://github.com/wiedi/w0nko/archive/u2.10.12.10+snircd-1.3.4a+w0nko-17.7.zip
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	sw@core.io
@@ -15,7 +15,7 @@ LICENSE=	gnu-gpl-v1
 CONFLICTS+=	ircd-hybrid-[0-9]* ircu*
 
 GNU_CONFIGURE=	YES
-USE_TOOLS+=	lex yacc
+USE_TOOLS+=	flex yacc
 
 CONFIGURE_ARGS+=	--bindir=${PREFIX}/sbin
 CONFIGURE_ARGS+=	--with-cpath=${PKG_SYSCONFDIR}/ircd.conf
