@@ -1,0 +1,6 @@
+$NetBSD$
+
+RMD160 (libevhtp/libevhtp-1.2.0.tar.gz) = f9574f25d2fc38d48f4947f791e675348bd90f5a
+SHA512 (libevhtp/libevhtp-1.2.0.tar.gz) = 1dd6d3fa669d6cfc95533221d6a0532249def0e419c54461f73b77d591ba1fc327ea5f9288fa49ce77279905a4c259ce48bfafcd7ba7ea8a749df094663c6b05
+Size (libevhtp/libevhtp-1.2.0.tar.gz) = 355766 bytes
+SHA1 (patch-evhtp.c) = 05a500899023f87ccd9f9837a3801e4dea1313c7

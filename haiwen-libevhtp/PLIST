@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/evhtp.h
+include/evthr.h
+include/htparse.h
+lib/libevhtp.a
